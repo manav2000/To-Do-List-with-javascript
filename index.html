@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="itemEntry">
+        <div class="input-group w-50 mr-2">
+            <input type="text" class="inputBar" placeholder="Enter item ..." id="task">
+        </div>
+        <div class="Button">
+            <button class="btn btn-primary" style="background: transparent; border: none;" id="button">ADD</button>
+        </div>
+    </div>
+
+    <h1>YOUR TASK's</h1>
+    <!--This is where the list will be updated-->
+    <ul class="list" id="list">
+        <li class="item">
+            <div class="cont" id="buttons">
+                <p class="text">My Task</p>
+                <button class="btn btn-primary deletebutton" type="submit">DELETE</button>
+                <button class="btn btn-primary donebutton" type="submit">DONE</button>
+            </div>
+        </li>
+    </ul>
+    <script src="toDoList.js"></script>
+</body>
+
+</html>
